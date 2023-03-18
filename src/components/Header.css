@@ -1,0 +1,14 @@
+.header {
+  width: 100%;
+  background-color: #e0e324;
+  display: flex;
+  padding-left: 40px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+}
+
+.keep-head {
+  font-size: 30px;
+  font-weight: 500;
+  margin-left: 5px;
+}
