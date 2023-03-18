@@ -32,3 +32,12 @@
   background-color: #eb564b;
   color: white;
 }
+
+@media (max-width: 800px) {
+  .note {
+    width: 91%;
+  }
+  .delete {
+    margin-left: 85%;
+  }
+}
