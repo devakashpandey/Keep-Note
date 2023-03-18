@@ -1,5 +1,5 @@
 .main-note {
-  width: 400px;
+  width: 450px;
   padding: 20px;
   margin: 30px auto;
 }
@@ -30,4 +30,30 @@ form {
   border-radius: 10px;
   padding: 5px;
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.4);
+}
+
+.addbtn {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  top: 20px;
+  left: 340px;
+  cursor: pointer;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  background-color: yellow;
+  transition: 0.2s;
+}
+
+.addbtn:hover {
+  background-color: rgb(100, 253, 100);
+}
+
+@media (max-width: 500px) {
+  .main-note {
+    width: 400px;
+  }
+  .addbtn {
+    left: 290px;
+  }
 }
