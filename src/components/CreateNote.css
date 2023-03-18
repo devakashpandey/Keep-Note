@@ -1,0 +1,33 @@
+.main-note {
+  width: 400px;
+  padding: 20px;
+  margin: 30px auto;
+}
+
+input {
+  width: 100%;
+  line-height: 50px;
+  padding: 5px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-weight: bold;
+}
+
+textarea {
+  width: 100%;
+  line-height: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  margin: 15px 0px;
+  padding: 5px;
+}
+
+form {
+  min-height: 50px;
+  background-color: #eaf1f4;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.4);
+}
