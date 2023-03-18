@@ -12,6 +12,7 @@ input {
   border: none;
   outline: none;
   font-weight: bold;
+  font-size: 22px;
 }
 
 textarea {
@@ -22,6 +23,7 @@ textarea {
   outline: none;
   margin: 15px 0px;
   padding: 5px;
+  font-size: 20px;
 }
 
 form {
