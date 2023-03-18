@@ -3,6 +3,8 @@ import "./CreateNote.css";
 import { BsPlusCircleFill } from "react-icons/bs";
 
 const CreateNote = ({ addNote }) => {
+  const [show, setShow] = useState(false);
+
   const [note, setNote] = useState({
     title: "",
     content: "",
@@ -24,17 +26,27 @@ const CreateNote = ({ addNote }) => {
     });
   };
 
+  const expandIt = () => {
+    setShow(true);
+  };
+
+  const shrinkIt = () => {
+    setShow(false);
+  };
+
   return (
     <>
       <div className="main-note ">
         <form className="container">
-          <input
-            type="text"
-            placeholder="Title"
-            value={note.title}
-            onChange={inputEvent}
-            name="title"
-          ></input>
+          {show ? (
+            <input
+              type="text"
+              placeholder="Title"
+              value={note.title}
+              onChange={inputEvent}
+              name="title"
+            ></input>
+          ) : null}
           <textarea
             rows=""
             cols=""
@@ -42,8 +54,10 @@ const CreateNote = ({ addNote }) => {
             value={note.content}
             onChange={inputEvent}
             name="content"
+            onClick={expandIt}
+            onDoubleClick={shrinkIt}
           ></textarea>
-          <BsPlusCircleFill className="addbtn" onClick={addEvent} />
+          {show && <BsPlusCircleFill className="addbtn" onClick={addEvent} />}
         </form>
       </div>
     </>
