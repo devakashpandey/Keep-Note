@@ -1,0 +1,33 @@
+.note {
+  background-color: #eaf1f4;
+  width: 280px;
+  box-shadow: 2px 3px 9px -3px rgba(0, 0, 0, 0.4);
+  margin: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  float: left;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.delete {
+  height: 38px;
+  width: 38px;
+  background-color: #ebd834;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.1s;
+  margin-left: 81%;
+  padding: 6px;
+}
+
+.delete:hover {
+  background-color: #eb564b;
+  color: white;
+}
