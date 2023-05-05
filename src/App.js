@@ -1,8 +1,8 @@
 import "./App.css";
-import Header from "./components/Header";
+import Header from "./components/header/Header";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import CreateNote from "./components/CreateNote";
-import Note from "./components/Note";
+import CreateNote from "./components/createNote/CreateNote";
+import Note from "./components/note/Note";
 import { useState } from "react";
 
 function App() {
